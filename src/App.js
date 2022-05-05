@@ -41,22 +41,17 @@ function App() {
 
 const PizzaCards = pizzaArr.map((item, pos) => {
   return (
-<PizzaCard key = {pos} name={item.name} image={item.image} description={item.description} price={item.price} />
+<PizzaCard key = {pos} name={item.name} image={item.image} description={item.description} price={item.price}/>
   )
+},)
 
-}
-
-)
   return (
     <>
     {/* <Confirmation/> */}
     <Container>
       <Row>
-      <Col xs={3}>
-      {PizzaCards}
-      </Col>
+      <Col xs={3}>{PizzaCards}</Col>
       </Row>
-      
     </Container>
     </>
   );
