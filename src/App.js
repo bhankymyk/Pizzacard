@@ -2,7 +2,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row} from 'react-bootstrap';
 // import  Confirmation from "./Component/Confirmation";
 import  PizzaCard  from './Component/PizzaCard';
 // import Pizza from './data'
@@ -50,8 +50,14 @@ const PizzaCards = pizzaArr.map((item, pos) => {
     {/* <Confirmation/> */}
     <Container>
       <Row>
+<<<<<<< HEAD
       <Col xs={3}>{PizzaCards}</Col>
       </Row>
+=======
+      {PizzaCards}
+      </Row>
+
+>>>>>>> ab1aa658133d28ef2b13ce3e6638415677faeadd
     </Container>
     </>
   );
