@@ -50,14 +50,9 @@ const PizzaCards = pizzaArr.map((item, pos) => {
     {/* <Confirmation/> */}
     <Container>
       <Row>
-<<<<<<< HEAD
-      <Col xs={3}>{PizzaCards}</Col>
-      </Row>
-=======
       {PizzaCards}
       </Row>
 
->>>>>>> ab1aa658133d28ef2b13ce3e6638415677faeadd
     </Container>
     </>
   );

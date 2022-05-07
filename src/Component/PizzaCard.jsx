@@ -1,7 +1,12 @@
 import React from "react";
+import OnKlick from "./OnKlick";
 import { Card, Badge, Button} from 'react-bootstrap';
 
 const PizzaCard = (props) => {
+        const pizzabtn = () => {
+            alert ("Your order will be ready in 55 minutes time")
+        }
+    
     return (
 <div className="mr-3 col-sm-6 col-md-3">
     <Card className="pizza shadow-sm bg-light rounded mb-3">
@@ -12,7 +17,7 @@ const PizzaCard = (props) => {
                 <Badge>${props.price} </Badge>
             </div>
             <Card.Text className="text-secondary">{props.description}</Card.Text>
-            <Button className="btn btn-success btn-block">Order Pizza</Button>
+            <Button  onClick={pizzabtn} className="btn btn-success btn-block">Order Pizza</Button>
         </Card.Body>
     </Card>
 </div>
