@@ -1,10 +1,9 @@
 import React from "react";
-import OnKlick from "./OnKlick";
 import { Card, Badge, Button} from 'react-bootstrap';
 
 const PizzaCard = (props) => {
         const pizzabtn = () => {
-            alert ("Your order will be ready in 55 minutes time")
+            alert ("Your order will be ready in 15 minutes time")
         }
     
     return (
