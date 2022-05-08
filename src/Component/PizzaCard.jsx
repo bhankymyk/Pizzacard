@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, Badge, Button} from 'react-bootstrap';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const PizzaCard = (props) => {
-        const pizzabtn = () => {
-            alert ("Your order will be ready in 15 minutes time")
-        }
+        const notify = () => toast.success("Your pizza will be ready in 5 minutes time");
     
     return (
 <div className="mr-3 col-sm-6 col-md-3">
@@ -16,7 +16,8 @@ const PizzaCard = (props) => {
                 <Badge>${props.price} </Badge>
             </div>
             <Card.Text className="text-secondary">{props.description}</Card.Text>
-            <Button  onClick={pizzabtn} className="btn btn-success btn-block">Order Pizza</Button>
+            <Button  onClick={notify} className="btn btn-success btn-block">Order Pizza</Button>
+            <ToastContainer position="top-center" hideProgressBar={true}/>
         </Card.Body>
     </Card>
 </div>
