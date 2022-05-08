@@ -1,11 +1,8 @@
-// import logo from './logo.svg';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Container, Row} from 'react-bootstrap';
-// import  Confirmation from "./Component/Confirmation";
 import  PizzaCard  from './Component/PizzaCard';
-// import Pizza from './data'
 
 function App() {
   const pizzaArr = [
@@ -47,12 +44,10 @@ const PizzaCards = pizzaArr.map((item, pos) => {
 
   return (
     <>
-    {/* <Confirmation/> */}
     <Container>
       <Row>
       {PizzaCards}
       </Row>
-
     </Container>
     </>
   );
