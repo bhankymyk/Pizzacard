@@ -7,7 +7,7 @@ const PizzaCard = (props) => {
         const notify = () => toast.success("Your pizza will be ready in 5 minutes time");
     
     return (
-<div className="mr-3 col-sm-6 col-md-3">
+<div className="mr-3 col-sm-6 col-md-3 mt-5">
     <Card className="pizza shadow-sm bg-light rounded mb-3">
         <Card.Img src={props.image}/>
         <Card.Body className="d-flex flex-column">

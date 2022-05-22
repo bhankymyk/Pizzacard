@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Container, Row} from 'react-bootstrap';
 import  PizzaCard  from './Component/PizzaCard';
+import Navigation from './Component/Navigation';
 
 function App() {
   const pizzaArr = [
@@ -46,6 +47,7 @@ const PizzaCards = pizzaArr.map((item, pos) => {
     <>
     <Container>
       <Row>
+        <Navigation/>
       {PizzaCards}
       </Row>
     </Container>
