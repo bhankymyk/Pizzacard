@@ -2,9 +2,9 @@
   text-align: center;
 }
 body {
-  margin: 20px 0;
+  margin:0;
   padding: 0;
-  line-height: 1;
+  /* line-height: 1; */
   color: #202020;
 }
 .topbar {
@@ -16,4 +16,7 @@ background-color: #198754;
 .nav-link {
   color: white !important;
   justify-content: space-evenly !important;
+}
+.description{
+  text-align: justify;
 }
