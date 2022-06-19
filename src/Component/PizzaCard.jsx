@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const PizzaCard = (props) => {
-        const notify = () => toast.success("Your pizza will be ready in 5 minutes time");
+        const notify = () => toast.success("Pizza not currently available");
     
     return (
 <div className="col-sm-6 col-md-3 mt-2">
