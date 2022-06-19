@@ -45,7 +45,7 @@ const PizzaCards = pizzaArr.map((item, pos) => {
 
   return (
     <>
-    <Container>
+    <Container fluid>
       <Row>
         <Navigation/>
       {PizzaCards}
