@@ -1,4 +1,6 @@
 import React from "react";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Card, Badge, Button} from 'react-bootstrap';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,7 +18,9 @@ const PizzaCard = (props) => {
                 <Badge>${props.price} </Badge>
             </div>
             <Card.Text className="description">{props.description}</Card.Text>
-            <Button  onClick={notify} className="btn btn-success btn-block">Order Pizza</Button>
+            <AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">
+            <Button  onClick={notify} className="btn btn-success btn-block">Order Pizza</Button> 
+            </AnimationOnScroll>
             <ToastContainer position="top-center" hideProgressBar={true}/>
         </Card.Body>
     </Card>
